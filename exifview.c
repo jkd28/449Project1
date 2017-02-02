@@ -26,6 +26,7 @@ int main(int argc, char *argv[]){
 	int man_string = 0x010F;
 	int cam_mod = 0x0110;
 	int sub_block_address = 0x8769;
+	int i;
 	
 	/* open file*/
 	FILE *f = fopen(argv[1], "rb");
@@ -50,7 +51,7 @@ int main(int argc, char *argv[]){
 	for(i = 0; i < tag.count; i++){
 		fread(&temp_tiff, sizeof(temp_tiff), 1, f);
 		/*if tag identifier matches any we care about, save this tag to tiff_array*/
-		
+		printf("Identity of TIFF: %#2x%#2x\n", temp_tiff.ident[1], temp_tiff.ident[0]);
 	}
 	
 	return 0;
