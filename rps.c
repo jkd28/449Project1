@@ -59,7 +59,7 @@ int compare_choices(int cpu_choice, int user_choice){
 
 /*generates a random num 1-3 to be used as CPU pick*/
 int generate_cpu_choice(){
-	int rand_val = rand() % (4);
+	int rand_val = rand() % (3);
 	return rand_val;
 }
 
