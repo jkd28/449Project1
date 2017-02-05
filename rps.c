@@ -71,9 +71,9 @@ int generate_cpu_choice(){
 0 means an invalid input
 */
 int valid_choice(char choice[]){
-	char rock[4];
-	char paper[5];
-	char scissors[8];
+	char rock[5];
+	char paper[6];
+	char scissors[9];
 	int r, p, s;
 	/*set values for comparison arrays*/
 	strcpy(rock, "rock");
@@ -135,7 +135,7 @@ int rps(){
 int main()
 {
 	char response[10];
-	char yes[3];
+	char yes[4];
 	/*Game Setup*/
 	srand((unsigned int)time(NULL)); /*seed rand num gen ONCE*/
 	printf("Welcome to Rock, Paper, Scissors.\nThe rules are simple: \n1)Rock smashes Scissors\n2)Scissors cut Paper\n3)Paper covers Rock.\n\nGood Luck.\n");
