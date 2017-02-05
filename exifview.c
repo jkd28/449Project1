@@ -1,3 +1,9 @@
+/********************
+John Dott
+CS 449: Project 1 Part 2
+Exif Viewer
+Due 2/5/2017
+*********************/
 #include <stdio.h>
 #include <string.h>
 int main(int argc, char *argv[]){

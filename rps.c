@@ -1,3 +1,9 @@
+/********************
+John Dott
+CS 449: Project 1 Part 1
+Rock, Paper, Scissors
+Due 2/5/2017
+*********************/
 #include <stdio.h>
 #include <string.h>
 int win_conditions(int, int);
@@ -9,10 +15,10 @@ int rps();
 /*takes tally of wins and checks if win conditions are satisfied*/
 int win_conditions(int cpu, int user){
 	printf("The score is now You: %d Computer: %d\n\n\n", user, cpu);
-	if(user >= 5){
+	if(user >= 3){
 		printf("Game Over! You Win!!\n");
 		return 2;
-	} else if(cpu >=5){
+	} else if(cpu >=3){
 		printf("Game Over! You Lose.\n");
 		return 1;
 	} else { 
