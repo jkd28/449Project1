@@ -97,8 +97,8 @@ int valid_choice(char choice[]){
 /*plays Rock, Paper, Scissors*/
 int rps(){
 	char choice[10];
-	int valid, cpu_choice, cpu_wins, user_wins, result;
-	int over = 0;
+	int valid, cpu_choice, result;
+	int over = 0, cpu_wins = 0, user_wins = 0;
 	int round = 1;
 	while(over == 0){
 		/*get user choice*/
